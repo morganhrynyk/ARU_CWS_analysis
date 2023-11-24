@@ -6,8 +6,10 @@ To use this project, you need to have `conda` installed on your system. It is re
 2. Navigate to this directory on the command line
 3. Create the conda environment with the following command:
 ```commandline
-conda env create -f ARU_CWS_env.yml --prefix <local path here>
+conda env create -f ARU_CWS_env.yml -n ARU_CWS_analysis
 ```
+* you may need to install conda: https://www.anaconda.com/download/
+* and add it to your path variables - follow fix 3. https://www.partitionwizard.com/partitionmanager/conda-is-not-recognized.html
 4. Activate the newly created conda environment
 ```commandline
 conda activate ARU_CWS_analysis
@@ -15,7 +17,7 @@ conda activate ARU_CWS_analysis
 5. Now, install the jupyter kernel by entering the following commands:
 ```commandline
 conda install ipykernel -y
-python -m ipykernel install --user --name=ARU_CWS_analysis
+python -m ipykernel install --user --name=ARU_CWS_analysis 
 ```
 6. Start a Jupyter server so you can open the included notebooks (`*.ipynb`). Note this will start an ongoing process that needs to stay open to keep the server running.
 ```commandline
